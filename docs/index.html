@@ -32,7 +32,7 @@
     <div class="main" id="main">
         <div class="container">
             <div class="notification">
-                <button class="notification__info">
+                <button class="notification__info modal-btn" data-id="welcome">
                     <svg class="notification__icon">
                         <use xlink:href="img/dist/sprite.svg#icon-notification"></use>
                     </svg>
@@ -345,6 +345,36 @@
         </div>
     </footer>
     <!-- End footer -->
+    <!-- Modal -->
+    <div class="modal" id="welcome">
+        <div class="modal__wrapper content">
+            <p>
+                Добро пожаловать!
+                <br><br>
+            </p>
+            <p>Вы находитесь в мобильной версии сервиса поиска товарных знаков LINKMARK Lite с ограниченным функционалом. Для использования всех возможностей поиска, пожалуйста, перейдите на полную версию сайта с компьютера — <a href="https://linkmark.ru/">https://linkmark.ru/</a></p>
+            <p>В LINKMARK Lite доступны следующие опции поиска по зарегистрированным товарным знакам:</p>
+            <ul>
+                <li>По названию;</li>
+                <li>По номеру;</li>
+                <li>С учетом классов МКТУ.</li>
+            </ul>
+            <p>Поиск по зарегистрированным объектам абсолютно бесплатный!</p>
+            <p>В полной версии сайта LINKMARK для ПК доступен расширенный функционал поиска:</p>
+            <ul>
+                <li>По изображениям;</li>
+                <li>По правообладателям;</li>
+                <li>По заявкам;</li>
+                <li>По Международным непатентованным наименованиям (МНН);</li>
+                <li>По статусу (действует/не действует/продлен).</li>
+            </ul>
+            <p>Вы можете задавать удобные дополнительные фильтры для более тонких настроек выдачи результата.</p>
+            <p>В версии для ПК для вас доступны удобные функции добавления объектов в мониторинг, хранения истории поисковых запросов, сохранения и распечатки полученных результатов.</p>
+            <p>Информация в базах данных обновляется один раз в неделю.</p>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
     <!-- Scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
